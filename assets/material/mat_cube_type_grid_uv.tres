@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c671ytwgdwsx5"]
+
+[ext_resource type="Texture2D" uid="uid://df8w37argw800" path="res://addons/2026_03_15_gdp_hello_cube/assets/2d/uv_grid/Blender_Default_Mixed_Grid.jpg" id="1_bvcfg"]
+
+[resource]
+albedo_texture = ExtResource("1_bvcfg")
