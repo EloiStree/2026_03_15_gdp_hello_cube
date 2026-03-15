@@ -1,8 +1,10 @@
 
+Add to existing project  
 ```
 git submodule add https://github.com/EloiStree/2026_03_15_gdp_hello_cube.git addons/2026_03_15_gdp_hello_cube
 ```
 
+Add to temporary project  
 ```
 git clone https://github.com/EloiStree/2026_03_15_gdp_hello_cube.git addons/2026_03_15_gdp_hello_cube
 ```
