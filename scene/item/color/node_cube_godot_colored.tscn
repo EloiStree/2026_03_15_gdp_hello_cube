@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cejvo7ah1d027"]
+
+[ext_resource type="Texture2D" uid="uid://b8qa17gw5ay57" path="res://addons/2026_03_15_gdp_hello_cube/assets/2d/uv_grid/CustomUVChecker_byValle_1K.png" id="1_4qdwj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dd2jt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xoixw"]
+albedo_texture = ExtResource("1_4qdwj")
+
+[node name="NodeCubeGodotColored" type="Node3D" unique_id=1123745034]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=836585325]
+mesh = SubResource("BoxMesh_dd2jt")
+surface_material_override/0 = SubResource("StandardMaterial3D_xoixw")

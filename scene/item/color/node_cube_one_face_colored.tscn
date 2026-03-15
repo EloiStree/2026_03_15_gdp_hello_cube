@@ -1,0 +1,53 @@
+[gd_scene format=4 uid="uid://54unbl6aehjk"]
+
+[ext_resource type="Texture2D" uid="uid://dh7j8duotn787" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_face_uv_colored.png" id="1_tgb01"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_itccd"]
+resource_name = "Material.002"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rt5li"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/////wAAAAAAAP////8AAAAA//8AAAAAAAAAAP//AAD///////8AAAAAAAAAAAAA//8AAAAAAAD//wAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dd5wt"]
+resource_name = "cube_type_one_face_CubeOneFace"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("KvjUB9QHKvjUB9QHKvgq+NQHKvgq+NQHKvgq+NQH1Acq+NQH1Acq+NQH1Acq+Cr4Kvgq+NQH1Acq+NQH1Acq+NQHKvgq+NQHKvgq+NQH1Acq+NQH1Acq+NQH1Acq+Cr4"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_itccd"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////wAA/78AAP//////vwAA//8AAP+//////////7///wAA////vwAA//////+//////////78AAAAA////vwAAAAD//1TVAAD//wAAVNUAAP////9U1QAAAAAAAFTVAAAAAAAAVNX//wAA//9U1f//AAAAAFTVAAAAAP//VNX//wAAAABU1f///////1TV/////wAAVNX//wAA//9U1QAAAAAAAP///////wAA//8AAP//AAD/////AAAAAP//////f////3////9/////f/////////////////////9UVaqqVFWqqlRVqqpUVaqqVFVUVVRVVFVUVVRVVFVUVaoqqiqqKqoqqiqqKqoqqir/P/+//z//v/8//7//P/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rt5li")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_thr7o"]
+albedo_texture = ExtResource("1_tgb01")
+
+[node name="NodeCubeOneFaceColored" type="Node3D" unique_id=1167273649]
+
+[node name="cube_type_one_face" type="Node3D" parent="." unique_id=618099264]
+
+[node name="CubeOneFace" type="MeshInstance3D" parent="cube_type_one_face" unique_id=285113472]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("ArrayMesh_dd5wt")
+surface_material_override/0 = SubResource("StandardMaterial3D_thr7o")

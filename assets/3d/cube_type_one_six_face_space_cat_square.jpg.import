@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c8krxt68tcu21"
+path.s3tc="res://.godot/imported/cube_type_one_six_face_space_cat_square.jpg-b9dba6dfdc1884c8c101e7be7ad9627d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "9284b8659c0a16c5ba2d4f22da2953d4"
+}
+
+[deps]
+
+source_file="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_six_face_space_cat_square.jpg"
+dest_files=["res://.godot/imported/cube_type_one_six_face_space_cat_square.jpg-b9dba6dfdc1884c8c101e7be7ad9627d.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

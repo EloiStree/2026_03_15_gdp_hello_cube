@@ -1,0 +1,53 @@
+[gd_scene format=4 uid="uid://dfuo627yuxsff"]
+
+[ext_resource type="Texture2D" uid="uid://cr40y1iy2tdmx" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_cross_uv.png" id="1_6fqki"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7e5tt"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_00ux2"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEAAwAFAAIABQAAAAIABgAEAAAABQAGAAAABwABAAQABwADAAEABgAHAAQABQADAAcABQAHAAYA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/////wAAAAAAAP////8AAAAA//8AAAAAAAAAAP//AAD///////8AAAAAAAAAAAAA//8AAAAAAAD//wAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jngq5"]
+resource_name = "cube_type_cross_CubeCross"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("tGBqQ0qd1AZKnWpDtGDUBrRglLxKnSr5tGAq+UqdlLzf2f9/Sp1qQ9/ZakNKnf9/Sp3/f7RglLy0YP9/Sp2UvLRg/38fJGpDtGBqQx8k/39Knf9/tGBqQ0qdakO0YP9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_7e5tt"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////wAA//8AAP///////wAA//8AAP///////////////wAA/////wAA//////////////////8AAAAA/////wAAAAD///+/AAD//wAA/78AAP//////vwAAAAAAAP+/AAAAAAAA/////wAA////////AAAAAP//AAAAAP///////wAAAAD/v/////////+//////wAA/7///wAA////vwAAAAAAAP///////wAA//8AAP//AAD/////AAAAAP///3//v/9//7//f/+//3//v/9//3//f/9//3//f/9//3//f////3////9/////f////3//P/9//z//f/8//3//P/9/AAD/fwAA/38AAP9/AAD/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_00ux2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xmjv"]
+albedo_texture = ExtResource("1_6fqki")
+
+[node name="NodeCubeCrossDefaultUV" type="Node3D" unique_id=240636208]
+
+[node name="cube_type_cross" type="Node3D" parent="." unique_id=495276044]
+
+[node name="CubeCross" type="MeshInstance3D" parent="cube_type_cross" unique_id=1465396609]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("ArrayMesh_jngq5")
+surface_material_override/0 = SubResource("StandardMaterial3D_6xmjv")

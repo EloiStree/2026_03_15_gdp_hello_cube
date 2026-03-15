@@ -1,15 +1,17 @@
 [gd_scene format=4 uid="uid://dblny44vef5m6"]
 
-[ext_resource type="Texture2D" uid="uid://cmhsxp16s2o0b" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_blender_uv.png" id="1_fbe4u"]
-[ext_resource type="Texture2D" uid="uid://cr40y1iy2tdmx" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_cross_uv.png" id="2_ddkyu"]
-[ext_resource type="Texture2D" uid="uid://ttrfwrbnqgb4" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_face_uv.png" id="3_mkp31"]
-[ext_resource type="Texture2D" uid="uid://bajl6rlm2gkrn" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_six_face_uv.png" id="4_i6qtw"]
+[ext_resource type="PackedScene" uid="uid://cturltmmbm1o3" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/default/node_cube_godot_default_uv.tscn" id="1_lbn21"]
+[ext_resource type="PackedScene" uid="uid://bdpldbafxqoct" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/default/node_cube_blender_default_uv.tscn" id="2_xoixw"]
+[ext_resource type="PackedScene" uid="uid://dfuo627yuxsff" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/default/node_cube_cross_default_uv.tscn" id="3_pgojj"]
+[ext_resource type="PackedScene" uid="uid://b53hn6uk7jsju" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/default/node_cube_one_face_default_uv.tscn" id="4_x1uhv"]
+[ext_resource type="PackedScene" uid="uid://bhyh7dlo6q8aa" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/default/node_cube_six_face_default_uv.tscn" id="5_amfch"]
 [ext_resource type="Material" uid="uid://c671ytwgdwsx5" path="res://addons/2026_03_15_gdp_hello_cube/assets/material/mat_cube_type_grid_uv.tres" id="5_ddkyu"]
-[ext_resource type="Texture2D" uid="uid://b8qa17gw5ay57" path="res://addons/2026_03_15_gdp_hello_cube/assets/2d/uv_grid/CustomUVChecker_byValle_1K.png" id="6_2u6cf"]
-[ext_resource type="Texture2D" uid="uid://bckrjdn5d0sd0" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_blender_uv_colored.png" id="7_lbn21"]
-[ext_resource type="Texture2D" uid="uid://bqu2giejjpxya" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_cross_uv_colored.png" id="8_xoixw"]
-[ext_resource type="Texture2D" uid="uid://dh7j8duotn787" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_face_uv_colored.png" id="9_pgojj"]
-[ext_resource type="Texture2D" uid="uid://wgvphss83mc8" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_one_six_face_uv_colored.png" id="10_x1uhv"]
+[ext_resource type="PackedScene" uid="uid://cejvo7ah1d027" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/color/node_cube_godot_colored.tscn" id="7_noost"]
+[ext_resource type="PackedScene" uid="uid://cqeyhwuiob4on" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/color/node_cube_blender_colored.tscn" id="8_acvby"]
+[ext_resource type="PackedScene" uid="uid://jixyyqylc5h6" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/color/node_cube_cross_colored.tscn" id="9_m02oq"]
+[ext_resource type="PackedScene" uid="uid://54unbl6aehjk" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/color/node_cube_one_face_colored.tscn" id="10_sripu"]
+[ext_resource type="PackedScene" uid="uid://co0btg7oityng" path="res://addons/2026_03_15_gdp_hello_cube/scene/item/color/node_cube_six_face_colored.tscn" id="11_thr7o"]
+[ext_resource type="PackedScene" uid="uid://dt8rp70w10ohw" path="res://addons/2026_03_15_gdp_hello_cube/assets/3d/cube_type_cross.glb" id="12_xoixw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_dd2jt"]
 
@@ -51,9 +53,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_orgxq")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dd2jt"]
-albedo_texture = ExtResource("1_fbe4u")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7e5tt"]
 resource_name = "Material.001"
 cull_mode = 2
@@ -91,9 +90,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_00ux2")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xmjv"]
-albedo_texture = ExtResource("2_ddkyu")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_itccd"]
 resource_name = "Material.002"
@@ -133,9 +129,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rt5li")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2u6cf"]
-albedo_texture = ExtResource("3_mkp31")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7auts"]
 resource_name = "Material.003"
 cull_mode = 2
@@ -174,87 +167,23 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hkxhc")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbn21"]
-albedo_texture = ExtResource("4_i6qtw")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amfch"]
-albedo_texture = ExtResource("6_2u6cf")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xoixw"]
-albedo_texture = ExtResource("6_2u6cf")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_noost"]
-albedo_texture = ExtResource("7_lbn21")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgojj"]
-albedo_texture = ExtResource("7_lbn21")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_acvby"]
-albedo_texture = ExtResource("8_xoixw")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x1uhv"]
-albedo_texture = ExtResource("8_xoixw")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m02oq"]
-albedo_texture = ExtResource("9_pgojj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_thr7o"]
-albedo_texture = ExtResource("9_pgojj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sripu"]
-albedo_texture = ExtResource("10_x1uhv")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bjhc3"]
-albedo_texture = ExtResource("10_x1uhv")
-
 [node name="DemoCubeType" type="Node3D" unique_id=1027374301]
 
 [node name="GroupDefaultUV" type="Node3D" parent="." unique_id=1322825503]
 
-[node name="NodeCubeGodot" type="Node3D" parent="GroupDefaultUV" unique_id=699543887]
+[node name="NodeCubeGodotDefaultUV" parent="GroupDefaultUV" unique_id=2105748674 instance=ExtResource("1_lbn21")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="GroupDefaultUV/NodeCubeGodot" unique_id=2026202190]
-mesh = SubResource("BoxMesh_dd2jt")
+[node name="NodeCubeBlenderDefaultUV" parent="GroupDefaultUV" unique_id=691557168 instance=ExtResource("2_xoixw")]
 
-[node name="NodeCubeBlender" type="Node3D" parent="GroupDefaultUV" unique_id=507856094]
-
-[node name="cube_type_blender" type="Node3D" parent="GroupDefaultUV/NodeCubeBlender" unique_id=1931649689]
-
-[node name="CubeBlender" type="MeshInstance3D" parent="GroupDefaultUV/NodeCubeBlender/cube_type_blender" unique_id=1478293798]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("ArrayMesh_54m11")
-surface_material_override/0 = SubResource("StandardMaterial3D_dd2jt")
-
-[node name="NodeCubeCross" type="Node3D" parent="GroupDefaultUV" unique_id=78304466]
+[node name="NodeCubeCrossDefaultUV" parent="GroupDefaultUV" unique_id=240636208 instance=ExtResource("3_pgojj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
-[node name="cube_type_cross" type="Node3D" parent="GroupDefaultUV/NodeCubeCross" unique_id=1042046753]
-
-[node name="CubeCross" type="MeshInstance3D" parent="GroupDefaultUV/NodeCubeCross/cube_type_cross" unique_id=1225268983]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("ArrayMesh_jngq5")
-surface_material_override/0 = SubResource("StandardMaterial3D_6xmjv")
-
-[node name="NodeCubeOneFace" type="Node3D" parent="GroupDefaultUV" unique_id=1943407554]
+[node name="NodeCubeOneFaceDefaultUV" parent="GroupDefaultUV" unique_id=48636714 instance=ExtResource("4_x1uhv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 
-[node name="cube_type_one_face" type="Node3D" parent="GroupDefaultUV/NodeCubeOneFace" unique_id=778608781]
-
-[node name="CubeOneFace" type="MeshInstance3D" parent="GroupDefaultUV/NodeCubeOneFace/cube_type_one_face" unique_id=1022277117]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("ArrayMesh_dd5wt")
-surface_material_override/0 = SubResource("StandardMaterial3D_2u6cf")
-
-[node name="NodeCubeSixFace" type="Node3D" parent="GroupDefaultUV" unique_id=2116515246]
+[node name="NodeCubeSixFaceDefaultUV" parent="GroupDefaultUV" unique_id=1498768676 instance=ExtResource("5_amfch")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
-
-[node name="cube_type_one_six_face" type="Node3D" parent="GroupDefaultUV/NodeCubeSixFace" unique_id=1258901358]
-
-[node name="CubeSixFace" type="MeshInstance3D" parent="GroupDefaultUV/NodeCubeSixFace/cube_type_one_six_face" unique_id=1366961841]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("ArrayMesh_xrop2")
-surface_material_override/0 = SubResource("StandardMaterial3D_lbn21")
 
 [node name="GroupGridUV" type="Node3D" parent="." unique_id=1401008133]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
@@ -308,53 +237,32 @@ surface_material_override/0 = ExtResource("5_ddkyu")
 [node name="GroupColored" type="Node3D" parent="." unique_id=399657780]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="NodeCubeGodot" type="Node3D" parent="GroupColored" unique_id=410157877]
+[node name="NodeCubeGodotColored" parent="GroupColored" unique_id=1123745034 instance=ExtResource("7_noost")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="GroupColored/NodeCubeGodot" unique_id=789238836]
-material_override = SubResource("StandardMaterial3D_amfch")
-mesh = SubResource("BoxMesh_dd2jt")
-surface_material_override/0 = SubResource("StandardMaterial3D_xoixw")
+[node name="NodeCubeBlenderColored" parent="GroupColored" unique_id=340546179 instance=ExtResource("8_acvby")]
 
-[node name="NodeCubeBlender" type="Node3D" parent="GroupColored" unique_id=1007575934]
-
-[node name="cube_type_blender" type="Node3D" parent="GroupColored/NodeCubeBlender" unique_id=577424195]
-
-[node name="CubeBlender" type="MeshInstance3D" parent="GroupColored/NodeCubeBlender/cube_type_blender" unique_id=132103536]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_noost")
-mesh = SubResource("ArrayMesh_54m11")
-surface_material_override/0 = SubResource("StandardMaterial3D_pgojj")
-
-[node name="NodeCubeCross" type="Node3D" parent="GroupColored" unique_id=1458583906]
+[node name="NodeCubeCrossColored" parent="GroupColored" unique_id=1274664757 instance=ExtResource("9_m02oq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
-[node name="cube_type_cross" type="Node3D" parent="GroupColored/NodeCubeCross" unique_id=1668365246]
-
-[node name="CubeCross" type="MeshInstance3D" parent="GroupColored/NodeCubeCross/cube_type_cross" unique_id=1753155204]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_acvby")
-mesh = SubResource("ArrayMesh_jngq5")
-surface_material_override/0 = SubResource("StandardMaterial3D_x1uhv")
-
-[node name="NodeCubeOneFace" type="Node3D" parent="GroupColored" unique_id=1275369103]
+[node name="NodeCubeOneFaceColored" parent="GroupColored" unique_id=1167273649 instance=ExtResource("10_sripu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 
-[node name="cube_type_one_face" type="Node3D" parent="GroupColored/NodeCubeOneFace" unique_id=887893158]
-
-[node name="CubeOneFace" type="MeshInstance3D" parent="GroupColored/NodeCubeOneFace/cube_type_one_face" unique_id=1154255852]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_m02oq")
-mesh = SubResource("ArrayMesh_dd5wt")
-surface_material_override/0 = SubResource("StandardMaterial3D_thr7o")
-
-[node name="NodeCubeSixFace" type="Node3D" parent="GroupColored" unique_id=2144758141]
+[node name="NodeCubeSixFaceColored" parent="GroupColored" unique_id=983655758 instance=ExtResource("11_thr7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 
-[node name="cube_type_one_six_face" type="Node3D" parent="GroupColored/NodeCubeSixFace" unique_id=768413859]
+[node name="NodeCubeOneFaceDefaultUV" type="Node3D" parent="." unique_id=1033065750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.000113, 0, -2.6245234)
 
-[node name="CubeSixFace" type="MeshInstance3D" parent="GroupColored/NodeCubeSixFace/cube_type_one_six_face" unique_id=1943960879]
+[node name="cube_type_one_face" type="Node3D" parent="NodeCubeOneFaceDefaultUV" unique_id=840190677]
+
+[node name="CubeOneFace" type="MeshInstance3D" parent="NodeCubeOneFaceDefaultUV/cube_type_one_face" unique_id=1466825797]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_sripu")
-mesh = SubResource("ArrayMesh_xrop2")
-surface_material_override/0 = SubResource("StandardMaterial3D_bjhc3")
+
+[node name="NodeCubeSixFaceDefaultUV" type="Node3D" parent="." unique_id=275653223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.26092, -1.1920929e-07, -0.675845)
+
+[node name="cube_type_one_six_face" type="Node3D" parent="NodeCubeSixFaceDefaultUV" unique_id=148046548]
+
+[node name="cube_type_cross" parent="." unique_id=1273377149 instance=ExtResource("12_xoixw")]
+transform = Transform3D(-5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, -5.9604645e-08, 8.457617, 0, -1.1198368)
