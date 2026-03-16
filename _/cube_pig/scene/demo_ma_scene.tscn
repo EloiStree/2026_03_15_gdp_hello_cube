@@ -1,0 +1,87 @@
+[gd_scene format=4 uid="uid://cgt1je53owyr6"]
+
+[ext_resource type="PackedScene" uid="uid://c357u70ofb8kh" path="res://addons/2026_03_15_gdp_hello_cube/_/cube_pig/scene/item/prefab_mon_cube.tscn" id="1_3qotg"]
+[ext_resource type="Texture2D" uid="uid://ttjuvawx73gi" path="res://addons/2026_03_15_gdp_hello_cube/_/cube_pig/assets/3d/mon_chat_cube.jpg" id="1_w05ll"]
+[ext_resource type="Material" uid="uid://bbggkxq348n6q" path="res://addons/2026_03_15_gdp_hello_cube/_/cube_pig/assets/3d/mat_mon_cube_per_pixel.material" id="3_3qotg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngpss"]
+resource_name = "CubeMaterial"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_w05ll")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_exjd0"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAACAAQAAQAFAAMAAAAFAAEAAgADAAYABQAGAAMAAgAGAAQAAAAHAAUABQAHAAYABAAHAAAABAAGAAcA"),
+"name": "CubeMaterial",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD/////AAAAAP///////wAA//8AAP//AAAAAP////8AAP//AAAAAAAAAAAAAP//AAAAAAAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_68yth"]
+resource_name = "MonCube_CubeMesh"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("/////z5EPkT/////PkR8CP//////f3wI//////9/PkT/////wLs+RP/////Au/9///////9//3///////38+RP//////fz5E//////9//3//////PkT/f/////8+RD5E/////z5EwLv/////PkT/f///////f/9///////9/wLv/////PkSC9/////8+RMC7//////9/wLv//////3+C9/////8+RD5E/////z5E/3//////fAj/f/////98CD5E"),
+"format": 34896613407,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": SubResource("StandardMaterial3D_ngpss"),
+"name": "CubeMaterial",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD//wAAVNX/////AABU1f///////1TVAAD/////VNX///////8AgP//AAD//wCAAAAAAP//AIAAAP////8AgAAA//////+/AAAAAP///78AAAAAAAD/vwAA//8AAP+///8AAAAAVNUAAAAAAABU1QAAAAD//1TV//8AAP//VNX/////AAD/////AAAAAP////8AAP///////////////wAA//8AAP//AAAAAAAA/////wAAAAD///////8AAP//qaqqqqmqqqqpqqqqqaqqqv9/////f////3////9/////f/7//3/+//9//v//f/7/qipU1aoqVNWqKlTVqipU1f+//3//v/9//7//f/+//3//f/7//3////9//v//f/7/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_exjd0")
+
+[sub_resource type="BoxMesh" id="BoxMesh_3qotg"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_3qotg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qoqo"]
+shading_mode = 0
+albedo_color = Color(1, 1, 0, 1)
+
+[node name="DemoMaScene" type="Node3D" unique_id=148988661]
+
+[node name="MonCube" parent="." unique_id=1312856480 instance=ExtResource("1_3qotg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14047432, 0.96424514, 2.022267)
+
+[node name="MonCube2" parent="." unique_id=1737280538 instance=ExtResource("1_3qotg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7278457, 0, -2.6071448)
+
+[node name="MonCube3" parent="." unique_id=1767768035 instance=ExtResource("1_3qotg")]
+transform = Transform3D(0.96431965, 0, -0.16857691, 0, 0.7553833, 0, 0.18323874, 0, 0.8871597, 1.4535251, 0, 4.9511395)
+
+[node name="MonCube4" type="Node3D" parent="." unique_id=1273447479]
+transform = Transform3D(1, 0, 0, 0, 0.74425733, 0, 0, 0, 0.87510407, 3.0543113, 0, 1.4631596)
+
+[node name="CubeObject" type="MeshInstance3D" parent="MonCube4" unique_id=393668000]
+transform = Transform3D(0.94629437, 0, -0.32330635, 0, 0.9999998, 0, 0.32330635, 0, 0.9462942, -3.3176842, 0, 0)
+mesh = SubResource("ArrayMesh_68yth")
+surface_material_override/0 = ExtResource("3_3qotg")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1148797623]
+transform = Transform3D(0.39557755, 0, -0.9184326, 0, 1, 0, 0.9184326, 0, 0.39557755, -3.3633084, 1.1622877, 3.510378)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2016518473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.1878538)
+mesh = SubResource("BoxMesh_3qotg")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1623718666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64410615, 2.6531081)
+light_color = Color(1, 1, 0, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="OmniLight3D" unique_id=511979736]
+transform = Transform3D(0.15, 0, 0, 0, 0.137, 0, 0, 0, 0.144, 0, 0, 0)
+mesh = SubResource("SphereMesh_3qotg")
+surface_material_override/0 = SubResource("StandardMaterial3D_0qoqo")
